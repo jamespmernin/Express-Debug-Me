@@ -39,7 +39,6 @@ app.get('/users', (req, res) => {
 
 app.get('/users/:id', (req, res) => {
   const { id } = req.params
-  console.log(id);
   const user = users.filter(user => user.id === id)[0]
   res.json(user)
 })
